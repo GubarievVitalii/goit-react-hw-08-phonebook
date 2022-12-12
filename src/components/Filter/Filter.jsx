@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   filterContacts,
   сlearFilter,
-} from '../../redux/contactsSlice';
-import { getFilter } from '../../redux/contactsSelector';
+} from '../../redux/contacts/contactsSlice';
+import { getFilter } from '../../redux/contacts/contactsSelector';
 import sprite from '../../images/symbol-defs.svg';
 import s from './Filter.module.css';
 
