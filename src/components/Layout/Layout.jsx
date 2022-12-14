@@ -11,7 +11,7 @@ export const Layout = () => {
   const {name} = useSelector(selectUser);
   const navigate = useNavigate();
 
-  useEffect(() => { if (name) { navigate('/contacts'); return; } navigate("/login")}, [name])
+  useEffect(() => { if (name) { navigate('/contacts'); return; } navigate("/login")}, [name, navigate])
 
   return (
     <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 16px' }}>
