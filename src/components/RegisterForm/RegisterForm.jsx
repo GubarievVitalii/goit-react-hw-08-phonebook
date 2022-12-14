@@ -28,13 +28,13 @@ export const RegisterForm = () => {
       </label>{' '}
       <label className={s.label}>
         {' '}
-        Email <input type="email" name="email" />{' '}
+        Email <input type="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address"/>{' '}
       </label>{' '}
       <label className={s.label}>
         {' '}
-        Password <input type="password" name="password" />{' '}
+        Password <input type="password" name="password" pattern = "(?=.*[a-z])(?=.*[1-9]).{8,}" title = "The password cannot be less than 7 characters and must contain at least one number, one lowercase latin letter."/>{' '}
       </label>{' '}
-      <button type="submit">Register</button>{' '}
+      <button className={s.btnRegister} type="submit">Register</button>{' '}
     </form>
   );
 };

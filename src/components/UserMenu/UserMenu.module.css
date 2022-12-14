@@ -1,0 +1,16 @@
+.username {
+    margin: 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btnLogOut {
+    position: absolute;
+    right: 3vw;
+    top: 2vw;
+    border-radius: 5px;
+    border: 1px solid rgb(146, 161, 241);
+    box-shadow: 3px 3px 10px rgb(146, 161, 241);
+    padding-left: 10px;
+    padding-right: 10px;
+}
